@@ -10,6 +10,10 @@ The goal is to host on there my real time project aswell as my web project and t
 
 The design will be made mobile first 
 
+
+
+# User Experience
+
 ## Home page 
 
 On arrival the user will have a list of all my project ordered by most recent to least recent with a paging system
@@ -37,10 +41,12 @@ then pictures of the project as a slider (if more than one picture)
 ## Project Cards 
 
 * Main picture
+* Prod Date
 * Title
 * Slider
   * Stack
   * Type
+
 
 
 ## Filters
@@ -52,6 +58,7 @@ then pictures of the project as a slider (if more than one picture)
   * Bash
   * Shell
   * etc.. 
+* Frameworks/Library
 * Type
   * Web
   * Real Time
@@ -63,3 +70,90 @@ then pictures of the project as a slider (if more than one picture)
   * Jenkins 
 * Conterization 
   * Docker
+
+
+## Header
+
+Mon logo (galaxy binaire)
+
+
+## Footer 
+
+Formulaire pour envoyer un mail si intéresser 
+
+
+# Admin Controls 
+
+Acessible via a route "/admin"
+
+On arrival it ask a password  defined in .env file if correct it redirect us to the dashboard
+
+## Dashboard 
+
+A button to go to the User page 
+
+## Header
+
+A home logo to go to the user page 
+
+
+## Projects 
+
+A list of all current projects *
+
+A button to add a project *
+
+
+## Filters
+
+#### Filter Tab
+
+A list of all filters *
+
+A button to add a filter *
+
+
+#### Category Tab
+
+A List of all categories *
+
+A button to add a filter Category *
+
+---
+
+
+### List of projects
+
+As a vertical list with a button to either edit or delete
+
+On clicking edit it leads us to a edit page *
+
+On clicking delete it shows us a warning message asking us to confirm if we are sure to delete the project 
+
+
+* Title 
+* Type
+* Stacks
+
+### List of filters 
+
+As a vertical list 
+
+A button to edit a filter 
+* On clicking edit, the targeted filter inputs (name and category) becomes editable 
+  * To change the name it's a basic text input 
+  * To change the category it's a selector input
+* A button "Save" saves changes to the database, a cancel button cancel all changes 
+
+A button to delete a filter 
+* Shows a popup confirming delete 
+
+### List of categories
+
+Same as list of filters but only the name is changeable (text input too)
+
+### New Project 
+
+A page with the necessary inputs to create a new project 
+
+* Title 
