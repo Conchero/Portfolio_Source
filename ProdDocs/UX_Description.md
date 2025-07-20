@@ -156,4 +156,24 @@ Same as list of filters but only the name is changeable (text input too)
 
 A page with the necessary inputs to create a new project 
 
-* Title 
+* Title (Text input)
+* Project tyoe
+* Stack used 
+* Main picture (upload input )
+* Main picture preview (not saved)
+* Start time - End time (date time)
+* Team (text input)
+* Project description (text area) 
+* development description (textarea)
+* pictures of the project
+* preview of the pictures 
+* on the side locked pos
+ * Sources
+
+when canceling or saving changes it redirect us to the oroject page 
+
+### Edit project 
+
+Same as new but with info completed 
+
+
