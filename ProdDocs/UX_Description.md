@@ -157,7 +157,7 @@ Same as list of filters but only the name is changeable (text input too)
 A page with the necessary inputs to create a new project 
 
 * Title (Text input)
-* Project tyoe
+* Project type
 * Stack used 
 * Main picture (upload input )
 * Main picture preview (not saved)
