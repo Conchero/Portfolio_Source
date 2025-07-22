@@ -1,7 +1,7 @@
 ``` mermaid
 
 ---
-title : Portfolio class Diagram
+title : Portfolio entity class Diagram
 ---
 
 classDiagram
@@ -13,18 +13,24 @@ class Project {
     - Stack[] stackArray
     - string mainPictureURL
     - DateTime startTime
+
     - Date endTime
     - string team
     - text projectDescription
     - text developmentDescription
-    - string[] picturesArray
+    - Carousel carousel
 }
 
+class Carousel{
+    - int id
+    - string [] picturesArray
+}
 
 class Stack{
     - int id
     - string Name
     - Category category
+
 }
 
 
@@ -35,4 +41,6 @@ class Category{
 
 
 Project "*" --> "*" Stack
+Project "*" --> "1" Carousel
 Stack "*" --> "1" Category
+
