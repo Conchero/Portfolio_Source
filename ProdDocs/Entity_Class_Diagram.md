@@ -23,6 +23,9 @@ class Project {
     - ProjectCarousel carousel
 
     + getter_setter()
+    + RemoveStackAt(int _id)
+    + AddStack(ProjectStack _stack)
+    
 }
 
 namespace Database Relevent{
@@ -31,7 +34,7 @@ class ProjectStack{
     int id
     string slug 
     int projectID || Project project
-    int technologyID  || TechnologytechnologyArray 
+    int technologyID  || Technology technology
 
     + getter_setter()
 }
@@ -44,6 +47,8 @@ class ProjectCarousel{
 
     + getter_setter()
 }
+
+
 }
 
 class Carousel{

@@ -15,12 +15,13 @@ class LaravelRessource{
 
 class ProjectController {
     index()
-
 }
 
-class FilterController
+class TechnologyController
 
 class CategoryController
 
+
+
 ProjectController --() LaravelRessource
-FilterController --() LaravelRessource - Exept View
+TechnologyController --() LaravelRessource - Exept_View
